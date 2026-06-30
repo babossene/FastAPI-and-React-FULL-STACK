@@ -1,0 +1,36 @@
+inventor management app commandes
+
+python -m venv venv
+.\venv\Scripts\activate
+
+FastAPI documentation
+pip install fastapi
+
+Tortoise ORM documentation
+getting start
+sqlite: pip install tortoise-orm
+
+####################APP##############
+creation du fichier app.py
+//
+
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get('/')
+def index():
+    return{"Msg" : "Hello world"}
+
+######################terminal#########################
+
+pip install uvicorn
+uvicorn app:app --reload
+
+#######################navigation#####################
+
+http://127.0.0.1:8000/docs //cote navigateur
+
+#######################MODELS#########################
+creer le fichier models.py
+
